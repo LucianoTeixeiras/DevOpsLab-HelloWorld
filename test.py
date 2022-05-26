@@ -16,7 +16,7 @@ class Test(unittest.TestCase):
 
     def test_conteudo(self):
         # envia uma requisicao GET para a URL
-        result = self.app.get('/') 
+        result = self.app.get('/')
 
         # verifica o retorno do conteudo da pagina
         self.assertRegex(result.data.decode(), "Escreva uma Mensagem para o Cabecalho da Pagina.")

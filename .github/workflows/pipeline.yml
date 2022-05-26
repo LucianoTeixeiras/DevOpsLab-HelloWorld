@@ -28,7 +28,7 @@ jobs:
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
   tests:
-    # needs: lint
+    needs: lint
     runs-on: ubuntu-20.04
     strategy:
       matrix:
